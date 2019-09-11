@@ -7,20 +7,24 @@
 </head>
 <body>
 	<header>
-		<a href="#" class="logo"><img src="C:\Users\OSG-USER\Desktop\Work\1responsive\assets\logo.png" alt=""></a>
-		<nav class="left-nav">
-			<ul>
-				<li class="nav-links"><a href="#">Hire developers</a></li>
-				<li class="nav-links"><a href="#">Developer profile</a></li>
-				<li class="nav-links"><a href="#">Learn Vue.js</a></li>
-				<li class="nav-links"><a href="#">About</a></li>
-				<li class="nav-links"><a href="#">Pricing</a></li>
-			</ul>
-		</nav>
-		<div class="right-nav">
-			<a href="#"><button class="nav-btn">POST A JOB</button></a>
-			<a href="#">Login</a>
-			<a href="#">Register</a>
+		<label for="toggle">&#9776;</label>
+		<input type="checkbox" id="toggle">
+		<div class="main-nav">
+			<a href="#" class="logo"><img src="C:\Users\OSG-USER\Desktop\Work\1responsive\assets\logo.png" alt=""></a>
+			<nav class="left-nav">
+				<ul>
+					<li class="nav-links"><a href="#">Hire developers</a></li>
+					<li class="nav-links"><a href="#">Developer profile</a></li>
+					<li class="nav-links"><a href="#">Learn Vue.js</a></li>
+					<li class="nav-links"><a href="#">About</a></li>
+					<li class="nav-links"><a href="#">Pricing</a></li>
+				</ul>
+			</nav>
+			<div class="right-nav">
+				<a href="#"><button class="nav-btn btn">POST A JOB</button></a>
+				<a href="#">Login</a>
+				<a href="#">Registera</a>
+			</div>
 		</div>
 	</header>
 
@@ -31,8 +35,12 @@
 				<p>Sign up and post a job or create your developer profile. <br>
 					We will find offers / candidates for you!</p>
 				<div>
-					<a href="#" class="sec1-btn1 btn">Create a <strong>developer</strong> profile</a>
-					<a href="#" class="sec1-btn2 btn">Post a <strong>Vue.js</strong> job</a>
+					<button class="sec1-btn1">
+						<a href="#">Create a <strong>developer</strong> profile</a>
+					</button>
+					<button class="sec1-btn2">
+						<a href="#">Post a <strong>Vue.js</strong> job</a>
+					</button>
 				</div>
 				<ul class="sec1-bottom">
 					<li class="sec1-links active"><a href="#">All jobs</a></li>
@@ -51,7 +59,7 @@
 					<label for="">Filter by</label>
 					<div class="input">
 						<input type="text" placeholder="Keywords, location, job type...">
-						<button>Search!</button>
+						<button class="btn">Search!</button>
 					</div>
 				</div>
 
@@ -59,21 +67,21 @@
 					<div class="job-card-white job-card">
 						<img src="" alt="#">
 						<div class="card-text">
-							<h2>Experienced Front End Developer</h2>
+							<a href="#" class="ahover">Experienced Front End Developer</a>
 							<p>at <strong>Adept Anomly</strong> – Dallas, TX, USA, Remote</p><br>
 							<p>Summary Want to flex your front end dev skill without getting mired in design and pixel pushing? We are looking for an experienced Vue front end dev to help jump start our applicat...</p>
 						</div>
-						<p class="card-type"><strong>Freelance</strong></p>
+						<a class="card-type ahover"><strong>Freelance</strong></a>
 					</div>
 
 					<div class="job-card-yellow job-card">
 						<img src="" alt="#">
 						<div class="card-text">
-							<h2>Experienced Front End Developer</h2>
+							<a href="#" class="ahover">Experienced Front End Developer</a>
 							<p>at <strong>Adept Anomly</strong> – Dallas, TX, USA, Remote</p><br>
 							<p>Summary Want to flex your front end dev skill without getting mired in design and pixel pushing? We are looking for an experienced Vue front end dev to help jump start our applicat...</p>
 						</div>
-						<p class="card-type"><strong>Full-time</strong></p>
+						<a class="card-type ahover"><strong>Full-time</strong></a>
 					</div>
 				</div>
 			</div>
@@ -99,37 +107,91 @@
 			</div>
 
 			<div class="jobs-bars">
-				<div class="job-bar">
+				<a class="job-bar">
 					<h1>FI</h1>
 					<div class="details">
 						<h3>Javascript (Vue.js ) Frontend Developer</h3>
 						<p>at Flexible Informatics, LLC, Trenton, PA, USA</p>
 					</div>
 					<p>1 day ago</p>
-				</div>
+				</a>
 				<hr>
-				<div class="job-bar">
+				<a class="job-bar">
 					<h1>FI</h1>
 					<div class="details">
 						<h3>Javascript (Vue.js ) Frontend Developer</h3>
 						<p>at Flexible Informatics, LLC, Trenton, PA, USA</p>
 					</div>
 					<p>1 day ago</p>
-				</div>
+				</a>
 				<hr>
-				<div class="job-bar">
+				<a class="job-bar">
 					<h1>FI</h1>
 					<div class="details">
 						<h3>Javascript (Vue.js ) Frontend Developer</h3>
 						<p>at Flexible Informatics, LLC, Trenton, PA, USA</p>
 					</div>
 					<p>1 day ago</p>
-				</div>
+				</a>
 			</div>
-			<button class="load-jobs-btn">Load more jobs</button>
+			<button class="load-jobs-btn btn">Load more jobs</button>
 		</section>
 
 		<section class="section4">
+			<h1 class="title">Find Vue.js jobs by location</h1>
+			<div class="by-location">
+				<div class="loc-div">
+					<p><strong>Popular cities</strong></p>
+					<ul>
+						<li><a href="#" class="loc-link ahover">Vue.js jobs in New York</a></li>
+						<li><a href="#" class="loc-link ahover">Vue.js jobs in London</a></li>
+						<li><a href="#" class="loc-link ahover">Vue.js jobs in Paris</a></li>
+					</ul>
+				</div>
+				<div class="loc-div">
+					<p><strong>Filter by job type</strong></p>
+					<ul>
+						<li><a href="#" class="loc-link ahover">Full-time Vue.js jobs</a></li>
+						<li><a href="#" class="loc-link ahover">Part-time Vue.js jobs</a></li>
+						<li><a href="#" class="loc-link ahover">Freelance Vue.js jobs</a></li>
+						<li><a href="#" class="loc-link ahover">Internship Vue.js jobs</a></li>
+						<li><a href="#" class="loc-link ahover">Remote Vue.js jobs</a></li>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section class="section5">
+			<h1 class="title">Are you still learning Vue.js?</h1>
+			<h3>Browse through our list of Vue.js courses and resources.</h3>
+			<div class="tutorial-cards">
+				<div class="tutorial-card">
+					<div class="tutorial-img" ></div>
+					<div class="tutorial-details">
+						<h3 class="tutorial-title">React JS, Angular & Vue JS - Quickstart & Comparison</h3>
+						<p>Maximilian Schwarzmüller</p>
+						<p class="tutorial-enroll">Enrolled: 6659</p>
+						<h5>$11.99</h5>
+						<button class="success-btn">View course</button>
+					</div>
+				</div>
+				<div class="tutorial-card">
+					<div class="tutorial-img"></div>
+					<div class="tutorial-details">
+						<h3 class="tutorial-title">React JS, Angular & Vue JS - Quickstart & Comparison</h3>
+						<p>Maximilian Schwarzmüller</p>
+						<p class="tutorial-enroll">Enrolled: 6659</p>
+						<h5>$11.99</h5>
+						<button class="success-btn">View course</button>
+					</div>
+				</div>
+			</div>
+			<button class="success-btn">
+				<a href="#">View all</a>
+			</button>
+		</section>
+
+		<section class="section6">
 			<div class="split-1">
 			</div>
 			<div class="split-2">
@@ -137,16 +199,102 @@
 				<p>
 					Join our <strong>Vue.js professionals network</strong>. Sign up <br> and create your professional <strong>Vue.js developer <br> profile</strong> and let us help companies to find you.
 				</p>
-				<a href="" class="success-btn">Create my <strong>Vue.js</strong> profile</a>
+				<button class="success-btn">
+					<a href="">Create my <strong>Vue.js</strong> profile</a>
+				</button>
 			</div>
 		</section>
 
-		<section class="section5">
+		<section class="section7">
 			<div class="container">
-				
+				<p class="sec7-title"><strong>200+ companies</strong> have already trusted us!</p>
+				<div class="comments">
+					<div class="comment">
+						<img src="img/logo.jpg" alt="" width="auto" height="100">
+						<p>Couldn't be happier with VueJobs! I've received more great applications than I ever thought I would and I was very impressed with the quality of the applicants.</p>
+						<p><strong>Sebastian</strong>, Alligator.io</p>
+						<p>Check the real story</p>
+					</div>
+					<div class="comment">
+						<img src="img/logo.jpg" alt="" width="auto" height="100">
+						<p>Couldn't be happier with VueJobs! I've received more great applications than I ever thought I would and I was very impressed with the quality of the applicants.</p>
+						<p><strong>Sebastian</strong>, Alligator.io</p>
+						<p>Check the real story</p>
+					</div>
+				</div>
+				<div class="logos">
+					<a href="#"><img src="img/logo1.png" alt="" height="200" width="250"></a>
+					<a href="#"><img src="img/logo2.jpg" alt="" height="200" width="250"></a>
+					<a href="#"><img src="img/logo3.png" alt="" height="200" width="250"></a>
+					<a href="#"><img src="img/logo4.png" alt="" height="200" width="250"></a>
+				</div>
+			</div>
+		</section>
+
+		<section class="section8">
+			<div class="container">
+				<h1 class="title"><strong>Hire Vue.js developers</strong> from all around the globe</h1>
+				<p>Post a job on our leading <strong>Vue.js job board</strong> and connect with top <strong>Vue.js talent</strong> across the globe 🌎. Let us help you to find the best talent matches for your openings and make it reach up to 30k Vue.js developers!</p>
+				<button class="btn"><a href="#">Post a <strong>Vue.js</strong> job</a></button>
+			</div>
+		</section>
+
+		<section class="section9">
+			<div class="container">
+				<h1 class="title">Subscribe to our newsletter</h1>
+				<p class="secondary-title">Get the best of our listings into your inbox. Issued weekly.</p>
+				<div class="contact-form">
+					<input type="text" name="name" placeholder="NAME">
+					<input type="email" name="mail" placeholder="EMAIL">
+					<button class="btn success-btn">YES PLEASE</button>
+				</div>
+				<p>✋️ We promise to respect your inbox. Subscribe!</p>
 			</div>
 		</section>
 	</main>
+
+	<footer>
+		<ul>
+			<li><a href="#" class="ahover">Courses</a></li>
+			<li><a href="#" class="ahover">Browse jobs</a></li>
+		</ul>
+		<ul>
+			<li><a href="#" class="ahover">About</a></li>
+			<li><a href="#" class="ahover">Pricing</a></li>
+			<li><a href="#" class="ahover">Terms & Policy</a></li>
+		</ul>
+		<div class="foot-logo"></div>
+		<div class="foot-bot">
+			<h2>Get in touch</h2>
+			<p>hello@vuejobs.com</p>
+			<div class="social-btns">
+				<a href="">as</a>
+				<a href="">ds</a>
+				<a href="">sa</a>
+				<a href="">sd</a>
+			</div>
+		</div>
+	</footer>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+	<script>
+		const header = document.querySelector('header');
+		const section1 = document.querySelector('.section1');
+
+		const section1Options = {
+			rootMargin: '-200px 0px 0px 0px'
+		};
+
+		const section1Observer = new IntersectionObserver(function(entries, section1Observer) {
+			entries.forEach(entry => {
+				if(!entry.isIntersecting) {
+					header.classList.add('nav-scrolled')
+				} else {
+					header.classList.remove('nav-scrolled')
+				}
+			})
+		}, section1Options);
+
+		section1Observer.observe(section1);
+	</script>
 </body>
 </html>
